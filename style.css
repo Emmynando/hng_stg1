@@ -142,6 +142,11 @@ nav .items:active {
   animation: typewriter 4s steps(35) 1s forwards, blink 850ms steps(35) infinite;
 }
 
+#date,
+#time,
+#track {
+  font-weight: bold;
+}
 @media screen and (max-width: 680px) {
   .skill {
     display: grid;
