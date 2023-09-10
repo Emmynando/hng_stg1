@@ -1,0 +1,224 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #eee;
+}
+
+nav {
+  background-color: #0a0824;
+  color: #fff;
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+nav header {
+  font-family: "Oleo Script", cursive;
+  letter-spacing: 0.1rem;
+}
+nav .list ul {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  list-style-type: none;
+  transition: all 0.5s ease-in-out;
+}
+nav .list ul:hover {
+  transform: scale(1.1);
+  transform: rotate(-5deg);
+}
+nav .items {
+  color: #fff;
+  font-size: 90%;
+  font-family: "Ultra", serif;
+  letter-spacing: 0.1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: all 500ms ease-in-out;
+}
+nav .items:hover {
+  color: #ffbd33;
+}
+nav .items:active {
+  color: #ffbd33;
+}
+
+#intro {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#intro #pix {
+  border: 3px solid #4682b4;
+  border-radius: 1rem 2rem 3rem 4rem;
+  display: block;
+  filter: drop-shadow(0.5em 0.5em 0.3em #1a1919);
+  max-width: 10rem;
+  max-height: 8rem;
+  margin: 1% auto 1%;
+  transition: border-radius 500ms ease-in-out;
+}
+#intro #pix:hover {
+  cursor: pointer;
+  border-radius: 78% 22% 68% 32%/45% 32% 68% 55%;
+}
+#intro p {
+  font-family: "Oleo Script", cursive;
+  text-align: center;
+  font: bold;
+}
+#intro h1 {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 2rem;
+}
+#intro h1::before,
+#intro h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+#intro h1::before {
+  background-color: #adacac;
+  -webkit-animation: typewriter 4s steps(35) 1s forwards;
+  animation: typewriter 4s steps(35) 1s forwards;
+}
+#intro h1::after {
+  width: 0.1em;
+  height: 1.2em;
+  background: black;
+  -webkit-animation: typewriter 4s steps(35) 1s forwards,
+    blink 850ms steps(35) infinite;
+  animation: typewriter 4s steps(35) 1s forwards, blink 850ms steps(35) infinite;
+}
+
+@media screen and (max-width: 680px) {
+  .skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    width: 80% auto;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+}
+
+#contact_form {
+  background-color: #182747;
+}
+#contact_form form {
+  background-color: grey;
+  border: inherit;
+  caret-color: blue;
+  color: white;
+  display: flex;
+  font-family: "Oleo Script", cursive;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.1rem;
+  margin: 0 auto;
+  max-width: 30vw;
+  padding: 1rem;
+}
+#contact_form form button {
+  background-color: #0a0824;
+  color: white;
+  border-radius: 30px;
+  margin-top: 0.2em;
+  padding: 0.5em;
+}
+#contact_form form button:hover {
+  cursor: pointer;
+}
+#contact_form form label {
+  margin-top: 0.5em;
+}
+#contact_form form #message,
+#contact_form form #email,
+#contact_form form #subject {
+  background-color: white;
+  border-style: none;
+  font-size: 16px;
+  outline: none;
+}
+
+footer {
+  background-color: #010e47;
+  color: #fff;
+  font-family: "Ultra", serif;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding: 1rem;
+}
+footer .icon ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1em;
+  list-style-type: none;
+  margin-bottom: 0.5em;
+}
+footer .icon ul .f-awesome {
+  color: white;
+}
+
+.project {
+  position: relative;
+  left: 30em;
+  width: 200px;
+  height: 200px;
+  background-color: #010e47;
+}

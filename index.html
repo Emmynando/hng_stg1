@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chukwuemeka</title>
+    <script defer src="app.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="nav sticky">
+      <header>
+        <h2 data-testid="chukwuemeka">CHUKWUEMEKA</h2>
+      </header>
+
+      <div class="list">
+        <ul>
+          <li><a href="#contact_form" class="items item">Contact</a></li>
+          <li>
+            <a href="https://emmynando.github.io/ElectionGuage/" class="items"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Introduction part -->
+    <div id="intro">
+      <p data-testid="currentDayOfTheWeek">
+        It is <span id="date"></span> and the time in milliseconds is
+        <span id="time" data-testid="currentUTCTime"></span>
+      </p>
+      <img
+        src="./image/slack.png"
+        id="pix"
+        alt="chukwuemeka"
+        data-testid="slackDisplayImage"
+      />
+      <p>
+        I am Okezie, Chukewuemeka Joshua, a
+        <span data-testid="myTrack">FRONTEND</span> developer.<br />
+        I am a graduate of Mass Communication.<br />
+        This is my submission for HNG frontend task, track 2. Click
+        <span><a href="#contact_form" class="mail">here</a></span> to send a
+        mail.
+      </p>
+    </div>
+
+    <!-- mail part -->
+    <div id="contact_form">
+      <form>
+        <h3>GET IN TOUCH....</h3>
+        <label for="address">E-mail address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <label for="subject">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Subject"
+          required
+        />
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="6"
+          cols="22"
+          placeholder="Type Message"
+          required
+        >
+        </textarea>
+        <button type="submit" id="mail-button">SEND</button>
+      </form>
+    </div>
+  </body>
+  <footer>&copy; copyright Chukwuemeka .O. <span id="copyright"></span></footer>
+</html>
